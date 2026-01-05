@@ -8,15 +8,22 @@ permissions:
   contents: read
 
 jobs:
-  login:
+  login-test:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout (optional)
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # Step 2: Authenticate to GCP via OIDC
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: projects/853245610917/locations/global/workloadIdentityPools/githubaction/providers/github-action
           service_account: terraform-sa@new-7d564.iam.gserviceaccount.com
 
-      - name: Verify login
+      # Step 3: Verify login
+      - name: Verify GCP authentication
         run: |
           gcloud auth list
+          gcloud config list
