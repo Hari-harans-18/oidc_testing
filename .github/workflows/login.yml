@@ -21,7 +21,7 @@ jobs:
         with:
           workload_identity_provider: projects/853245610917/locations/global/workloadIdentityPools/githubaction/providers/github-action
           service_account: terraform-sa@new-7d564.iam.gserviceaccount.com
-          token_audience: https://iam.googleapis.com/projects/853245610917/locations/global/workloadIdentityPools/githubaction/providers/github-action
+          # token_audience: https://iam.googleapis.com/projects/853245610917/locations/global/workloadIdentityPools/githubaction/providers/github-action
 
       # Step 3: Verify login
       - name: Verify GCP authentication
