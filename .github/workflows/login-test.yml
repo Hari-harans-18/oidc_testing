@@ -1,4 +1,4 @@
-name: GCP OIDC Login Test
+name: GCP OIDC Login-test Test
 
 on:
   workflow_dispatch:
