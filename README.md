@@ -187,7 +187,7 @@ Open the workflow run
 
 If you see gcloud projects list output
 
-## Google Cloud login is successful
+##### Google Cloud login is successful
 
 # Security Benefits
 
@@ -209,10 +209,10 @@ Workflow must be inside .github/workflows/
 
 id-token: write permission is mandatory
 
-# Summary
-Step	Status
-Google Cloud Login	
-WIF Pool & Provider	
-Service Account	
-GitHub Actions	
-Secure Authentication	
+# Summary Step	Status
+
+###Google Cloud Login	
+###WIF Pool & Provider	
+###Service Account	
+###GitHub Actions	
+###Secure Authentication	
