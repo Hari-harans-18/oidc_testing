@@ -13,8 +13,6 @@ jobs:
   terraform-plan:
     name: Terraform Init Validate Plan
     runs-on: ubuntu-latest
-    environment:
-      name: production
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -82,5 +80,5 @@ jobs:
         with:
           name: tfplan
 
-      - name: Terraform Apply
-        run: terraform apply -auto-approve tfplan
+      # - name: Terraform Apply
+      #   run: terraform apply -auto-approve tfplan
