@@ -13,7 +13,8 @@ jobs:
   terraform-plan:
     name: Terraform Init Validate Plan
     runs-on: ubuntu-latest
-
+    environment:
+      name: production
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
